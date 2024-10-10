@@ -1,0 +1,116 @@
+* {
+    margin: auto;
+    padding:auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif
+}
+header {
+    background-color: #120323;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+main{
+    padding: 25px;
+}
+img {
+    max-width: 75%;
+    min-width: none;
+    height: auto;
+}
+aside {
+    background-color: #97bf04;
+    padding: 10px;
+}
+footer {
+    background-color: #d9043d;
+    padding: 10px;
+    text-align: center;
+}
+main figcaption h2 {
+    color: #120323;
+}
+header h1{
+    color: rgb(21, 128, 0);
+}
+.header-containter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+#container {
+        padding: 10px;
+        margin: 10px;
+        flex: 1 100%;
+        border-radius: 10px;
+}
+figure img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border: solid red;
+}
+
+
+@media ( min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-containter {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-containter {
+        margin: 0;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p {
+        padding: 10px;
+    }
+    figure img {
+        max-width: 300px;
+    }
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    #container{
+        display: flex;
+        flex-direction: row;
+    }
+    main {
+        flex: 2;
+    }
+    aside {
+        flex: 1;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
